@@ -1,28 +1,29 @@
-import ButtonEliminar from "../component/btnEliminar"
-import Tabla from "../component/Tabla"
-import ButtonAgregar from "../component/btnAgregar"
-import ButtonActualizar from "../component/btnActualizar"
-export default function Home(){
-    
+import ButtonActualizar from "../components/ButtonActualizar"
+import ButtonAgregar from "../components/ButtonAgregar"
+import ButttonEliminar from "../components/ButttonEliminar"
+import Tabla from "../components/Tabla"
+
+export default function Home() {
     return(
         <>
-            <div className="container text-center my-4">
+            <div className="container text-center my-5">
                 <div className="row">
                     <div className="col">
-                        <ButtonAgregar></ButtonAgregar>
+                        <ButtonAgregar/>
                     </div>
                     <div className="col">
-                        <ButtonEliminar></ButtonEliminar>
+                        <ButttonEliminar/>
                     </div>
                     <div className="col">
-                        <ButtonActualizar></ButtonActualizar>
+                        <ButtonActualizar/>
                     </div>
-                </div>
+                </div> 
             </div>
-
-            <div className="w-75 mx-auto">
-                <Tabla></Tabla>
-            </div>
+            <div className="w-75 m-auto">
+                <Tabla />
+            </div> 
+            
         </>
+        
     )
-}
+};

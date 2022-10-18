@@ -1,9 +1,12 @@
+import FirebaseContext from "../context/dbContext";
 import Home from "../containers/Home";
 
 function App() {
-    return(
-        <Home></Home>
-    )
+  return (
+    <FirebaseContext>
+      <Home></Home>
+    </FirebaseContext>
+  );
 }
 
 export default App;
